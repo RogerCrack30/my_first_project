@@ -20,8 +20,7 @@ model User {
 }
 
 generator client {
-  provider = "prisma-client-js"
-  output   = "../generated/prisma"
+  provider = "prisma-client.js"
 }
 
 /*datasource db {
@@ -52,4 +51,5 @@ model PostCategory {
 
   @@id([postId, categoryId])
 }
+
 
